@@ -6,8 +6,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.footer {
+  background-color: #f0f0f0; /* Light gray background color */
+  padding: 10px; /* Add some padding to the footer */
+  text-align: center; /* Center-align text */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer p {
+  margin: 0; /* Remove default margin for paragraphs */
+  font-size: 14px; /* Adjust font size as needed */
 }

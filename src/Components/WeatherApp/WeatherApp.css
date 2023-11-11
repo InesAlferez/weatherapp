@@ -1,0 +1,156 @@
+.container {
+    background: linear-gradient(180deg, #012340, #025939, #027333, #03A63C, #04D939);
+    border-radius: 40px;
+    height: 90%;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+}
+
+.data {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.data-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%; /* Adjust margin for smaller screens */
+}
+
+.element {
+    align-items: flex-start;
+    display: flex;
+    gap: 2%; /* Adjust gap for smaller screens */
+    margin: auto;
+}
+
+.feels-like, .weather-description {
+    color: white;
+    display: flex; /* Adjust display property */
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    font-weight: 400;
+    justify-content: center;
+}
+
+.icon {
+    margin-top: 2%; /* Adjust margin for smaller screens */
+}
+
+.search-icon,
+.search_button {
+    align-items: center;
+    background: #ebfffc;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+}
+
+.search_button:hover {
+    background: #9fc1cd;
+}
+
+.text {
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    font-weight: 400;
+}
+
+.top-bar {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    padding-top: 5%; /* Adjust padding for smaller screens */
+}
+
+.top-bar input {
+    background: #ebfffc;
+    border: none;
+    border-radius: 40px;
+    color: #626262;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    height: 78px;
+    outline: none;
+    padding-left: 40px;
+    width: 80%; /* Use full width on smaller screens */
+}
+
+.weather-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%; /* Adjust margin for smaller screens */
+}
+
+.weather-location {
+    color: white;
+    display: flex;
+    font-size: 3vw; /* Responsive font size based on viewport width */
+    font-weight: 400;
+    justify-content: center;
+}
+
+.weather-temp {
+    color: white;
+    display: flex;
+    font-size: 5vw; /* Responsive font size based on viewport width */
+    font-weight: 400;
+    justify-content: center;
+}
+
+.card {
+    align-items: center;
+    background: #027333;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2%; /* Adjust gap for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    justify-content: space-between;
+    margin: 0 5%; /* Adjust margin for smaller screens */
+    max-width: calc(100% - 20px); /* Limit maximum width for larger screens */
+    padding: 5% 3%; /* Adjust padding for smaller screens */
+    width: 70%; /* Adjust card width for smaller screens */
+}
+
+.hourly-forecast {
+    background: #027333;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto; /* Center the card horizontally */
+    margin-top: 20px; /* Adjust the top margin as needed */
+    padding: 20px;
+    width: 90%;
+}
+
+.hourly-forecast .hourly-data {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.hourly-forecast .hourly-data .icon {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        border-radius: 0; /* Remove border radius on smaller screens */
+    }
+
+    .top-bar {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        gap: 10px;
+    }
+}
